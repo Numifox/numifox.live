@@ -1,8 +1,9 @@
 {
-  "name": "@example/basics",
-  "type": "module",
+  "name": "@Numifox/numifox.tech",
   "version": "0.0.1",
   "private": true,
+  "author": "Numifox",
+  "repository": "git@github.com:Numifox/numifox.live.git",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
