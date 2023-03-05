@@ -1,0 +1,86 @@
+---
+const age = (): number => {
+  const birthDate: Date = new Date(2005, 8, 16);
+  const currentDate: Date = new Date();
+  const age: number = currentDate.getFullYear() - birthDate.getFullYear();
+  const month: number = currentDate.getMonth() - birthDate.getMonth();
+  if (
+    month < 0 ||
+    (month === 0 && currentDate.getDate() < birthDate.getDate())
+  ) {
+    return age - 1;
+  }
+  return age;
+};
+---
+
+<div
+  class="flex flex-row flex-wrap justify-center items-center space-x-4 text-2xl"
+>
+  <div class="about-row">
+    🏳️‍🌈
+    <p class="text-white">He/they</p>
+  </div>
+  <div class="about-row">
+    <p class="text-[#8EA6FF]">☆</p>
+
+    <p class="text-white">{age}</p>
+  </div>
+  <div class="about-row">
+    <!-- Divider -->
+    <p class="text-[#8EA6FF]">☆</p>
+
+    <p class="text-white">Germany</p>
+  </div>
+</div>
+
+<p class="pt-5">
+  I'm a {age} year old student from Germany. I'm currently finishing my A-Levels
+  and I'm studying computer science. Instead of learning or finishing my projects
+  I mostly distract myself with anime, manga, games and starting new projects. Most
+  of my projects are about web development, but I am also interested in IT security
+  and devops.
+</p>
+
+<h1
+  class="text-3xl font-bold pt-5 text-[#FE9ACE] underline decoration-[#8EA6FF]"
+>
+  Projects
+</h1>
+
+<p class="pt-5">
+  I'm currently working on a few things.
+  <ul class="list-disc list-inside">
+    <li>
+      Im learning IT Security with <a href="https://tryhackme.com/p/Numifox"
+        >THM</a
+      >
+    </li>
+    <li>
+      I'm studying at the <a href="https://www.hhu.de/en/">HHU</a> in Düsseldorf
+      through the project "Studieren vor dem Abitur"
+    </li>
+    <li>
+      Sometimes I publish small projects on my <a
+        href="https://github.com/Numifox">Github</a
+      > account like this website
+    </li>
+  </ul>
+</p>
+
+<style>
+  @tailwind base;
+  @tailwind components;
+
+  @layer base {
+    a {
+      @apply underline decoration-[#8EA6FF];
+    }
+  }
+
+  @layer components {
+    .about-row {
+      @apply flex flex-row items-center space-x-2;
+    }
+  }
+</style>
