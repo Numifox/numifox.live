@@ -2,4 +2,9 @@ www.numifox.live {
     root * /var/www/html
     encode gzip
     file_server
+
+tls {
+	dns cloudflare YOUR_TOKEN
+}
+
 }
