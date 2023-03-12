@@ -3,8 +3,8 @@ www.numifox.live {
     encode gzip
     file_server
 
-tls {
-	dns cloudflare YOUR_TOKEN
-}
+    tls {
+        dns cloudflare YOUR_TOKEN
+    }
 
 }
