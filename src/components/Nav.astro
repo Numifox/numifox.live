@@ -1,10 +1,10 @@
 <nav
   class="flex flex-wrap flex-col md:flex-row gap-2 md:gap-9 justify-center items-center pt-4"
 >
-  <a href="/" class="link">About me</a>
-  <a href="/blog">My blog</a>
-  <a href="/socials">Socials</a>
-  <a href="/contact">Contact me</a>
+  <a class="nav" href="/" class="link">About me</a>
+  <a class="nav" href="/socials">Socials</a>
+  <a class="nav" href="/blog">My blog</a>
+  <a class="nav" href="/contact">Contact me</a>
 </nav>
 
 <style>
@@ -12,8 +12,8 @@
   @tailwind components;
   @tailwind utilities;
 
-  @layer base {
-    a {
+  @layer components {
+    .nav {
       @apply underline underline-offset-4 decoration-2 decoration-[#FF53BF] active:decoration-[#FE9ACE] target:decoration-[#FE9ACE];
     }
   }

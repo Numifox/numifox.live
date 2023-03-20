@@ -8,3 +8,24 @@ import Layout from "../layouts/Layout.astro";
   <Header />
   <About />
 </Layout>
+
+<style is:global>
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+  @layer base {
+    h1 {
+      @apply text-3xl font-bold pt-5 text-[#FE9ACE] underline decoration-[#8EA6FF];
+    }
+
+    ul {
+      @apply list-disc list-inside;
+    }
+  }
+
+  @layer components {
+    .link {
+      @apply underline decoration-[#8EA6FF];
+    }
+  }
+</style>

@@ -1,3 +1,8 @@
-<main class="container w-3/4 md:w-1/2 mx-auto h-screen flex flex-col">
+---
+const { class: className } = Astro.props;
+const classes = `container w-3/4 md:w-1/2 mx-auto h-screen flex flex-col pt-5 ${className}`;
+---
+
+<main class={classes}>
   <slot />
 </main>

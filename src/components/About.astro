@@ -50,18 +50,20 @@ const age = (): number => {
 
 <p class="pt-5">
   I'm currently working on a few things.
-  <ul class="list-disc list-inside">
+  <ul>
     <li>
-      Im learning IT Security with <a href="https://tryhackme.com/p/Numifox"
-        >THM</a
+      Im learning IT Security with <a
+        class="link"
+        href="https://tryhackme.com/p/Numifox">THM</a
       >
     </li>
     <li>
-      I'm studying at the <a href="https://www.hhu.de/en/">HHU</a> in Düsseldorf
-      through the project "Studieren vor dem Abitur"
+      I'm studying at the <a class="link" href="https://www.hhu.de/en/">HHU</a> in
+      Düsseldorf through the project "Studieren vor dem Abitur"
     </li>
     <li>
       Sometimes I publish small projects on my <a
+        class="link"
         href="https://github.com/Numifox">Github</a
       > account like this website
     </li>
@@ -71,12 +73,6 @@ const age = (): number => {
 <style>
   @tailwind base;
   @tailwind components;
-
-  @layer base {
-    a {
-      @apply underline decoration-[#8EA6FF];
-    }
-  }
 
   @layer components {
     .about-row {
