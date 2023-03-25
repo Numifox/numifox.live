@@ -1,7 +1,47 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import "../assets/styles/index.css";
 ---
 
 <Layout>
-  <p>Contact</p>
+  <h1>Contact</h1>
+  <p class="pt-5"></p>
+  <p>
+    If you want to contact me apart from my socials you can use my email.
+    Furthermore I have my PGP key linked below.
+  </p>
+  <h2 class="pt-5">E-Mail</h2>
+  <ul>
+    <li>
+      <a class="link" href="mailto:nico.stender@posteo.de">
+        nico.stender@posteo.de - More professional</a
+      >
+    </li>
+    <li>
+      <a class="link" href="mailto:nstender.stender@posteo.de">
+        nstender05@gmail.com
+      </a>
+    </li>
+  </ul>
+  <h2>PGP-Key</h2>
+  <p class="pt-5">
+    Use this key to encrypt your message. I will decrypt it and answer you. The
+    key works for nico.stender@posteo.de
+  </p>
+  <ul>
+    <li>
+      Key: <a class="link" href="/pgp.txt">pgp.txt</a>
+    </li>
+    <li>
+      Or from my E-Mail Provider <a
+        class="link"
+        href="https://posteo.de/keys/nico.stender@posteo.de">Posteo</a
+      >
+    </li>
+    <li>
+      Fingerprint: <i class="bg-zinc-800"
+        >F53A 4901 7AE6 E0EC 67C3 EAFC D175 20EF 88F6 AB33
+      </i>
+    </li>
+  </ul>
 </Layout>

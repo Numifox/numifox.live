@@ -1,7 +1,9 @@
 ---
 import Container from "../components/Container.astro";
 import Nav from "../components/Nav.astro";
-
+import "../assets/styles/index.css";
+import background from "../assets/images/background.jpeg";
+import { Image } from "astro:assets";
 export interface Props {
   title?: string;
 }
@@ -25,65 +27,10 @@ const { title = "Numifox's Website" } = Astro.props;
     </Container>
     <!-- Dont render image if screen is mobile -->
 
-    <img
+    <Image
       class="absolute inset-y-20 left-0 w-1/6 justify-center invisible md:visible"
-      src="/images/background.jpeg"
+      src={background}
+      alt="background"
     />
   </body>
 </html>
-<style is:global>
-  .gradient {
-    background-image: linear-gradient(
-        216deg,
-        rgba(77, 77, 77, 0.05) 0%,
-        rgba(77, 77, 77, 0.05) 25%,
-        rgba(55, 65, 81, 0.65) 25%,
-        rgba(55, 65, 81, 0.65) 38%,
-        rgba(55, 65, 81, 0.65) 38%,
-        rgba(55, 65, 81, 0.65) 75%,
-        rgb(55, 65, 81) 75%,
-        rgb(55, 65, 81) 100%
-      ),
-      linear-gradient(
-        44deg,
-        rgb(55, 65, 81) 0%,
-        rgb(55, 65, 81) 34%,
-        rgb(55, 65, 81) 34%,
-        rgb(55, 65, 81) 57%,
-        rgba(25, 25, 25, 0.05) 57%,
-        rgba(25, 25, 25, 0.05) 89%,
-        rgba(135, 135, 135, 0.05) 89%,
-        rgba(135, 135, 135, 0.05) 100%
-      ),
-      linear-gradient(
-        241deg,
-        rgb(55, 65, 81) 0%,
-        rgb(55, 65, 81) 14%,
-        rgba(209, 209, 209, 0.05) 14%,
-        rgba(209, 209, 209, 0.05) 60%,
-        rgba(245, 245, 245, 0.05) 60%,
-        rgba(245, 245, 245, 0.05) 69%,
-        rgba(164, 164, 164, 0.05) 69%,
-        rgba(164, 164, 164, 0.05) 100%
-      ),
-      linear-gradient(
-        249deg,
-        rgba(248, 248, 248, 0.05) 0%,
-        rgba(248, 248, 248, 0.05) 32%,
-        rgb(55, 65, 81) 32%,
-        rgb(55, 65, 81) 35%,
-        rgba(202, 202, 202, 0.05) 35%,
-        rgba(202, 202, 202, 0.05) 51%,
-        rgba(181, 181, 181, 0.05) 51%,
-        rgba(181, 181, 181, 0.05) 100%
-      ),
-      linear-gradient(92deg, rgb(55, 65, 81), rgb(55, 65, 81));
-  }
-
-  @font-face {
-    font-family: "Inter";
-    src: url("/fonts/Inter-VariableFont_slnt,wght.ttf") format("truetype");
-    font-weight: 100 900;
-    font-display: swap;
-  }
-</style>
