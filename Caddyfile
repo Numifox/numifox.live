@@ -1,4 +1,8 @@
 www.numifox.live {
+    redir https://numifox.live{uri}
+}
+
+numifox.live {
     root * /var/www/html
     encode gzip
     file_server
@@ -6,5 +10,4 @@ www.numifox.live {
     tls {
         dns cloudflare YOUR_TOKEN
     }
-
 }
