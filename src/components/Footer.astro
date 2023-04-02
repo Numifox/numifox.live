@@ -1,0 +1,38 @@
+---
+import "../assets/styles/index.css";
+import sentences from "../assets/data/footer.json";
+
+const sentence = (): String => {
+  // If date applies
+  const date: Date = new Date();
+  const keys: String[] = Object.keys(sentences["with-date"]);
+
+  // If date applies
+  for (let i = 0; i < keys.length; i++) {
+    const key: String = keys[i];
+    const [day, month] = key.split(".");
+    if (date.getDate() == Number(day) && date.getMonth() + 1 == Number(month)) {
+      return sentences["with-date"][key];
+    }
+  }
+
+  // If date doesn't apply
+  return sentences["normal"][
+    Math.floor(Math.random() * sentences["normal"].length)
+  ];
+};
+---
+
+<footer
+  class="w-1/2 mx-auto mt-auto flex justify-center flex-row invisible sm:visible"
+>
+  <span>☆</span>
+  <span
+    ><a class="link" href="https://github.com/Numifox/numifox.live"
+      >Source Code</a
+    ></span
+  >
+  <span class="mx-2">•</span>
+  <span>{sentence}</span>
+  <span>☆</span>
+</footer>

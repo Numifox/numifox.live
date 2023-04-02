@@ -1,6 +1,7 @@
 ---
 import Container from "../components/Container.astro";
 import Nav from "../components/Nav.astro";
+import Footer from "../components/Footer.astro";
 import "../assets/styles/index.css";
 import background from "../assets/images/background.jpeg";
 import { Image } from "astro:assets";
@@ -20,7 +21,7 @@ const { title = "Numifox's Website" } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body class="bg-stone-800 text-white static">
+  <body class="bg-stone-800 text-white static h-screen">
     <Nav />
     <Container>
       <slot />
@@ -32,5 +33,6 @@ const { title = "Numifox's Website" } = Astro.props;
       src={background}
       alt="background"
     />
+    <Footer />
   </body>
 </html>

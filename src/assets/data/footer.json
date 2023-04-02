@@ -1,0 +1,17 @@
+{
+  "with-date": {
+    "31.12": "Happy new year!",
+    "01.01": "Happy new year!",
+    "24.12": "Merry christmas!",
+    "25.12": "Merry christmas!",
+    "3.10": "Happy Germnan Unity Day!"
+  },
+  "normal": [
+    "UwU",
+    "This is the first site I host on my own.",
+    "Design & Idea inspired by cynthia.dev",
+    "The cute cat pircutre is from my good friend Gerrit",
+    "Funfact: I like both Vue and React",
+    "OwO"
+  ]
+}

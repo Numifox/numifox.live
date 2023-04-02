@@ -16,6 +16,7 @@
     "@astrojs/vue": "^1.2.2",
     "@fontsource/anonymous-pro": "^4.5.9",
     "astro": "^2.1.6",
+    "astro-robots-txt": "^0.4.1",
     "tailwindcss": "^3.0.24",
     "vue": "^3.2.30"
   }
