@@ -3,11 +3,9 @@ import "../assets/styles/index.css";
 import sentences from "../assets/data/footer.json";
 
 const sentence = (): String => {
-  // If date applies
   const date: Date = new Date();
   const keys: String[] = Object.keys(sentences["with-date"]);
 
-  // If date applies
   for (let i = 0; i < keys.length; i++) {
     const key: String = keys[i];
     const [day, month] = key.split(".");
