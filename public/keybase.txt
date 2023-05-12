@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/numifox
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://numifox.live
+  * I am numifox (https://keybase.io/numifox) on keybase.
+  * I have a public key ASBbtIgxMQP784YTm17uTKwUgwc_yTZXwgkt8z-48T3y8Ao
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01205bb488313103fbf386139b5eee4cac1483073fc93657c2092df33fb8f13df2f00a",
+      "host": "keybase.io",
+      "kid": "01205bb488313103fbf386139b5eee4cac1483073fc93657c2092df33fb8f13df2f00a",
+      "uid": "a85e62eec16adb6bb840bfbb10d51e19",
+      "username": "numifox"
+    },
+    "merkle_root": {
+      "ctime": 1683924146,
+      "hash": "73e969f62ee744b6a0110c7e2bfe549f57d9735aeaaab4e1cfad6b50149459d459df7e38cfe798aeae5bf51a9c56d7555fe6ddab5d94c6876665ee806ec335f4",
+      "hash_meta": "287b07790ae792d0d6a1ed4e155ac553ce9b01d66919ad0a451c96f5c33b96cb",
+      "seqno": 24444018
+    },
+    "service": {
+      "entropy": "z9nK4UpJNtRx7L+4voPkKdbt",
+      "hostname": "numifox.live",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "6.0.1"
+  },
+  "ctime": 1683924226,
+  "expire_in": 504576000,
+  "prev": "57ab0ce565fc14962b28ce2a378f343905d41217fd222245a8bb99955c48225e",
+  "seqno": 7,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgW7SIMTED+/OGE5te7kysFIMHP8k2V8IJLfM/uPE98vAKp3BheWxvYWTESpcCB8QgV6sM5WX8FJYrKM4qN480OQXUEhf9IiJFqLuZlVxIIl7EIEE5DzSHqQDiwm/C0ebUe5z4/mkfMoe+r8iqIgL6Dpn8AgHCo3NpZ8RAn7Lf1IPA2EfNSB1x6bm7I5FFipKxyFdThYXvnYJnO50cMBeFuujM6rZlEloBSmLcEy7qXGUCpGttuM9srAH8AahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIOVzzkkc4g4KDWjICoUYosPbSG/Pn7WKc90JDF0FqFEgo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/numifox
+
+==================================================================
